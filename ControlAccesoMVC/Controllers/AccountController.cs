@@ -136,7 +136,8 @@ namespace ControlAccesoMVC.Controllers
 
         //
         // GET: /Account/Register
-        [AllowAnonymous]
+        //[AllowAnonymous]
+        [Authorize]
         public ActionResult Register()
         {
             return View();
